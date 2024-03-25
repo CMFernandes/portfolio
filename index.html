@@ -4,40 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/5c6584b4f6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h2>CF</h2>
-        </div>
+    <header class="header hide">
         <nav>
             <ul class="nav-list">
-                <li class="nav-item"><a href="#intro"></a>Home</li>
-                <li class="nav-item"><a href="#about"></a>About me</li>
-                <li class="nav-item"><a href="#projects"></a>Projects</li>
+                <li class="nav-item"><a href="#intro">Home</a></li>
+                <li class="nav-item"><a href="#about">About me</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
             </ul>
-            <button><i class="fas fa-bars"></i></button>
         </nav>
     </header>
 
     <section id="intro">
         <div>
-            <h1>Hi! I'm Cristiana Fernandes</h1>
-            <p>An aspiring Front End Developer</h2>
-                <div>
-                    <a href="https://linkedin.com/in/cfmfernandes" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/CMFernandes" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-        </div>
+            <h1>Hi! I'm <strong class="name-intro">Cristiana Fernandes</strong></h1>
+            <p>An aspiring Front End Developer</p>
+        </div> 
         <div>
-            <!-- <img href="" alt="">-->
-        </div>  
+            <a href="#about">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a> 
+        </div>
+        
     </section>
 
     <section id="about">
@@ -47,6 +42,14 @@
              for programming that drives me to continually push my boundaries and create meaningful projects.
              I'm enthusiastic about enhancing my skills and 
              eagerly seeking opportunities to learn and grow in this ever-evolving field.
+        <div>
+            <a href="https://linkedin.com/in/cfmfernandes" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/CMFernandes" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
     </section>
 
     <section id="projects">
