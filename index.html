@@ -3,9 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5c6584b4f6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Portfolio</title>
 </head>
 <body>
-    
+    <header class="header hide">
+        <nav>
+            <button class="theme-toggle fa-regular fa-moon"></button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#intro">Home</a></li>
+                <li class="nav-item"><a href="#about">About me</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="theme-container">
+        <button  class="theme-toggle fa-regular fa-moon"></button>
+    </div>
+
+    <section id="intro">
+        <div>
+            <h1>Hi! I'm <strong class="name-intro"></strong></h1>
+            <p class="intro-text"></p>
+        </div> 
+        <div>
+            <a href="#about" class="link-scroll">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a> 
+        </div>
+    </section>
+
+    <section id="about">
+        <div>
+            <h2>About me</h2>
+            <p class="about-text"> I'm currently embarking on an exciting journey to transition into the field of front end development.
+                Through self-guided learning with resources like The Odin Project (a free open source coding curriculum), I've discovered a passion 
+                for programming that drives me to continually push my boundaries and create meaningful projects.
+                I'm enthusiastic about enhancing my skills and 
+                eagerly seeking opportunities to learn and grow in this ever-evolving field.
+            <div >
+                <a href="https://linkedin.com/in/cfmfernandes" target="_blank">
+                    <i class="fa-brands fa-linkedin" ></i>
+                </a>
+                <a href="https://github.com/CMFernandes" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="icon-container">
+            <h3>Skills/Tools</h3>
+            <div>
+                <span><img src="icons/html5.svg" class="about-icon" alt="">HTML</span>
+                <span><img src="icons/css.svg" class="about-icon" alt="">CSS</span>
+                <span><img src="icons/js.svg"  class="about-icon" alt="">JavaScript</span>
+                <span><img src="icons/npm.svg" class="about-icon" alt="">npm</span>
+                <span><img src="icons/webpack.svg" class="about-icon" alt="">webpack</span>
+                <span><img src="icons/jest.svg" class="about-icon" alt="">Jest</span>
+                <span><img src="icons/git.svg" class="about-icon" alt="">Git</span>
+            </div>  
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Todo List</h3>
+                <p>Built an application for creating and managing tasks across different categories.</p>
+                <a href="https://cmfernandes.github.io/todo-list/" class="live-preview-btn" target="_blank">Live preview</a>
+                <a href="https://github.com/CMFernandes/todo-list" class="source-code-btn" target="_blank">Source Code</a>
+            </div>
+            <div class="project-img">
+                <img src="images/todolist-img.png" alt="" >
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Battleship</h3>
+                <p>A classic Battleship game where players compete against a randomized AI opponent.</p>
+                <a href="https://cmfernandes.github.io/battleship/" class="live-preview-btn" target="_blank">Live preview</a>
+                <a href="https://github.com/CMFernandes/battleship" class="source-code-btn" target="_blank">Source Code</a>
+            </div>
+            <div class="project-img">
+                <img src="images/battleship-img.png" alt="">
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Weather App</h3>
+                <p> A weather app that allows users to search for any city in the world and receive real-time weather forecasts.</p>
+                <a href="https://cmfernandes.github.io/weather-app/" class="live-preview-btn" target="_blank">Live preview</a>
+                <a href="https://github.com/CMFernandes/weather-app" class="source-code-btn" target="_blank">Source Code</a>
+            </div>
+            <div class="project-img">
+                <img src="images/weather-app-img.png" alt="">
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Library</h3>
+                <p> A "library" where the user can add and remove books. Users can also modify the reading status of each book.</p>
+                <a href="https://cmfernandes.github.io/library/" class="live-preview-btn" target="_blank">Live preview</a>
+                <a href="https://github.com/CMFernandes/library" class="source-code-btn" target="_blank">Source Code</a>
+            </div>
+            <div class="project-img">
+                <img src="images/library-img.png" alt="">
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Rock Paper Scissor</h3>
+                <p>A classic game of rock, paper, scissors, where the player competes against the computer.</p>
+                <a href="https://cmfernandes.github.io/rock_paper_scissor/" class="live-preview-btn" target="_blank">Live preview</a>
+                <a href="https://github.com/CMFernandes/rock_paper_scissor" class="source-code-btn" target="_blank">Source Code</a>
+            </div>
+            <div class="project-img">
+                <img src="images/rock-paper-scissor-img.png" alt="">
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Etch a Sketch</h3>
+                <p>Inspired by the classic drawing toy, users can draw simply by hovering over the screen. </p>
+                <a href="https://cmfernandes.github.io/etch-a-sketch/" class="live-preview-btn" target="_blank">Live preview</a>
+                <a href="https://github.com/CMFernandes/etch-a-sketch" class="source-code-btn" target="_blank">Source Code</a>
+            </div>
+            <div class="project-img">
+                <img src="images/etch-a-sketch-img.png" alt="">
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Calculator</h3>
+                <p>A calculator where users can perfom basic arithmetic operations.</p>
+                <a href="https://cmfernandes.github.io/calculator/" class="live-preview-btn" target="_blank">Live preview</a>
+                <a href="https://github.com/CMFernandes/calculator" class="source-code-btn" target="_blank">Source Code</a>
+            </div>
+            <div class="project-img">
+                <img src="images/calculator-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <footer >
+        <p>Copyright ©
+            <script> document.write(new Date().getFullYear())</script>
+            CMFernandes
+        </p>
+        
+    </footer>
 </body>
 </html>
